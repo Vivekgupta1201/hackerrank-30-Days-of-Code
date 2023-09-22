@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-Day 4: Class vs. Instance
+
 public class Person {
     private int age;    
   

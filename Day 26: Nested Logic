@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        int idate,imonth,iyear,rdate,rmonth,ryear,fine=0;
+        Scanner sc =new Scanner(System.in);
+        rdate=sc.nextInt();
+        rmonth=sc.nextInt();
+        ryear=sc.nextInt();
+        idate=sc.nextInt();
+        imonth=sc.nextInt();
+        iyear=sc.nextInt();
+        if(iyear<ryear){
+            fine=10000;
+            
+           // System.out.println(fine);
+        }
+    else if(imonth<rmonth&&ryear==iyear){
+       fine= (rmonth-imonth)*500;
+      // System.out.println(fine);
+        
+    }
+    else if(rmonth==imonth&&ryear==iyear&&rdate>idate){
+        fine=(rdate-idate)*15;
+       // System.out.println(fine);
+    }
+    else{
+    fine=0;
+    }
+    System.out.println(fine);
+    
+    }
+    
+}
